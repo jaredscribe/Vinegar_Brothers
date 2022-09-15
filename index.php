@@ -28,15 +28,15 @@
 <ul>
     <li>Bash shell. <a href="https://duckduckgo.com/?t=lm&q=top+10+bash+commands&ia=web">Top 10 shell commands</a>, shellcheck, <a href="https://devhints.io/bash">devhints.io/bash</a>, <a href="https://learnxinyminutes.com/docs/bash/">Learn Bash in 10 minutes</a>, <a href="https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well">The Unix Philosophy - Do One Thing and Do it Well</a>.  Zsh, <a href="https://ohmyz.sh/">ohmyz.sh</a></li>
     <li>Vim text editor    (Vimtutor).  <a href="https://neovim.io/">Neovim.io</a>?</li>
-    <li>Webpage quickstart, with <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap Graphic design patterns</a>. Document Object Model (DOM), Cascading Style Sheets (CSS), <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">MDN beginners guide</a> </li>
-    <li><b>Git</b> <a href="https://github.com/skills/introduction-to-github">Intro to Github (1hr)</a>, <a href="https://docs.github.com/en/get-started/quickstart/hello-world">Git Hello World</a>, <a href="https://training.github.com/downloads/github-git-cheat-sheet/">Git Cheat sheet</a></li>
+    <li><b>Git</b> distributed version control system (VCS) for collaboration <a href="https://github.com/skills/introduction-to-github">Intro to Github (1hr)</a>, <a href="https://docs.github.com/en/get-started/quickstart/hello-world">Git Hello World</a>, <a href="https://training.github.com/downloads/github-git-cheat-sheet/">Git Cheat sheet</a>, <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh">SSH Public Key Cryptography</a></li>
+    <li>Webpage quickstart, with <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap Graphic design patterns</a>, <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a>, the <a href="https://dom.spec.whatwg.org/#interface-document">Document Object Model (DOM)</a>, Cascading Style Sheets (CSS).</li>
     <li><b>Visualization and modeling</b> <a href="http://D3js.org">D3js.org</a> uses SVG for rendering, &mdash; <a href="https://observablehq.com/tutorials">D3.js tutorials at ObservableHQ</a></li>
-    <li><b>Javascript/ECMAScript</b>: <a href="https://observablehq.com/@observablehq/learn-javascript-introduction?collection=@observablehq/tutorial">Just enough to be dangerous with D3.js</a>, eslint, glitch.com, jsbin.com, <a href="https://eloquentjavascript.net/">Eloquent Javascript</a>, <a href="https://www.linkedin.com/learning/learning-functional-programming-with-javascript-es6-plus/a-functional-approach-to-transform-code">Learning functional programming ES6</a>, 
-    <li>Web Application Architecture: REST web service API (can use Python Flask, Ruby Sinatra, or Node.js for example), with a frontend framwork based on Model-View-Controller (MVC) design pattern and AJAX, such as React.js or Angular. <a href="https://www.udemy.com/course/es6-in-depth/?LSNPUBID=0F1O0otUXQc&ranEAID=0F1O0otUXQc&ranMID=39197&ranSiteID=0F1O0otUXQc-zD1ezaxEqNYcW_Ehtx80EQ&utm_medium=udemyads&utm_source=aff-campaign">ES6/Node/React/Webpack (5hrs tutorial)</a></li>
-    <li><b>Python</b>3: IronPython shell, Scipy, Numpy</li>
+    <li><b>Javascript/ECMAScript</b>: <a href="https://observablehq.com/@observablehq/learn-javascript-introduction?collection=@observablehq/tutorial">Just enough to be dangerous with D3.js</a>, (eslint) <a href="https://eloquentjavascript.net/">Eloquent Javascript</a>, <a href="https://www.linkedin.com/learning/learning-functional-programming-with-javascript-es6-plus/a-functional-approach-to-transform-code">Learning functional programming ES6 (1.5 hrs)</a>, MapReduce</li>
+    <li><b>RESTful Web Application Architecture: web service API (can use Python Flask, Ruby Sinatra, or Node.js for example), with a frontend framwork based on Model-View-Controller (MVC) design pattern and AJAX & JSON, such as React.js or Angular. <a href="https://www.udemy.com/course/es6-in-depth/?LSNPUBID=0F1O0otUXQc&ranEAID=0F1O0otUXQc&ranMID=39197&ranSiteID=0F1O0otUXQc-zD1ezaxEqNYcW_Ehtx80EQ&utm_medium=udemyads&utm_source=aff-campaign">ES6/Node/React/Webpack (5hrs tutorial)</a></li>
+    <li><b>Python</b>3: IronPython shell.  Scipy, Numpy.  Flask (Simple REST web server)</li>
     <li><a href="https://www.coursera.org/learn/learn-to-program">Learn to Program (U of Toronto, Coursera, ~25 hrs)</a> Based on the <a href="https://developers.google.com/edu/python/introduction?hl=en">Google Python course</a></li>)
-
-    <li>Databases:  Document Oriented Databases (NoSQL) such as MongoDB (binary JSON documents), Redis (Key-Value store).  Relational databases (RDBMS): MariaDB, MySQL, PostgreSQL</li>
+    <li><b>Data Structures and Algorithms</b>:  Big O notation, algorithm analysis</li>
+    <li><b>Databases</b>:  Document Oriented Databases (NoSQL) such as MongoDB (binary JSON documents), Redis (Key-Value store).  Relational databases (RDBMS): MariaDB, MySQL, PostgreSQL</li>
     <li><a href="https://www.coursera.org/collections/machine-learning">Andrew Ng's Machine Learning Collection</a></li> 
     <li><b>Networking:</b> <a href="https://en.wikipedia.org/wiki/OSI_model">OSI Model</a>, <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">Internet Protocol Suite</a></li>
     {{expand section}}
@@ -79,14 +79,26 @@
 
 <h2>Articles on Data Analysis and Science</h2>
 <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Data_wrangling">wiki/Data Wrangling or Munging</a> is mainly what this curriculum is preparing you to do.  Data will come in JSON, XML, CSV, SQL and have to be digested into the native data structures of your programming language (arrays, matrixes, dictionaries/maps), so it can be processed.</li>
+    <li><a href="https://en.wikipedia.org/wiki/Data_visualization">wiki/Data_visualization</a></li>
     <li><a href="https://en.wikipedia.org/wiki/Data_analysis">wiki/Data_analysis</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Data_wrangling">wiki/Data Wrangling or Munging</a></li>
-    <li><a href="https://en.m.wikiversity.org/wiki/Data_analysis">wikiversity/Data_analysis</a></li>
+    <li>These articles could be improved.  Be <a href="https://en.wikipedia.org/wiki/Wikipedia:Be_bold">WP:BOLD</a> and contribute to wikipedia</li>
 </ul>
 
 <blockquote>
 "The telos is first in order of intention, last in order of action" &mdash; Aristotle
 </blockquote>
+
+<h2>See Also</h2>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">MDN beginners guide</a> </li>
+    <li> <a href="https://html.com/html5/#What_is_HTML5">What is HTML5?</a></li>
+    <li><a href="https://htmlreference.io/">HTMLReference.io</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">Javascript tutorials on MDN</a></li> 
+    <li> glitch.com, jsfiddle.com, jsbin.com</li>
+    <li><a href="https://en.m.wikiversity.org/wiki/Data_analysis">wikiversity/Data_analysis</a></li>
+    <li><a href="http://trifacta.com">Trifacta</a> is advised by Mike Bostock, who made D3</li>
+</ul>
 
 </div> <!-- end .container -->
 <footer class="row">
