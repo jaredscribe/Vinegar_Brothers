@@ -26,14 +26,19 @@
 
 <h2>Tools (and Tutorials)</h2>
 <ul>
-    <li>Bash shell. <a href="https://duckduckgo.com/?t=lm&q=top+10+bash+commands&ia=web">Top 10 shell commands</a>, shellcheck, devhints.io/bash. <a href="https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well">The Unix Philosophy - Do One Thing and Do it Well</a>.  Zsh, <a href="https://ohmyz.sh/">ohmyz.sh</a></li>
-    <li>Vim    (Vimtutor)</li>
-    <li>Visualization and modeling <a href="http://D3js.org">D3js.org</a> &mdash; <a href="https://observablehq.com/tutorials">D3.js tutorials at ObservableHQ</a></li>
-    <li>Git, <a href="https://github.com/skills/introduction-to-github">Intro to Github (1hr)</a>, <a href="https://docs.github.com/en/get-started/quickstart/hello-world">Git Hello World</a>, <a href="https://training.github.com/downloads/github-git-cheat-sheet/">Git Cheat sheet</a></li>
-    <li>Javascript - functional programming paradigm.</li>
-    <li>Python3: IronPython shell, Scipy, Numpy</li>
+    <li>Bash shell. <a href="https://duckduckgo.com/?t=lm&q=top+10+bash+commands&ia=web">Top 10 shell commands</a>, shellcheck, <a href="https://devhints.io/bash">devhints.io/bash</a>, <a href="https://learnxinyminutes.com/docs/bash/">Learn Bash in 10 minutes</a>, <a href="https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well">The Unix Philosophy - Do One Thing and Do it Well</a>.  Zsh, <a href="https://ohmyz.sh/">ohmyz.sh</a></li>
+    <li>Vim text editor    (Vimtutor).  <a href="https://neovim.io/">Neovim.io</a>?</li>
+    <li>Webpage quickstart, with <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap Graphic design patterns</a>. Document Object Model (DOM), Cascading Style Sheets (CSS), <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">MDN beginners guide</a> </li>
+    <li><b>Git</b> <a href="https://github.com/skills/introduction-to-github">Intro to Github (1hr)</a>, <a href="https://docs.github.com/en/get-started/quickstart/hello-world">Git Hello World</a>, <a href="https://training.github.com/downloads/github-git-cheat-sheet/">Git Cheat sheet</a></li>
+    <li><b>Visualization and modeling</b> <a href="http://D3js.org">D3js.org</a> uses SVG for rendering, &mdash; <a href="https://observablehq.com/tutorials">D3.js tutorials at ObservableHQ</a></li>
+    <li><b>Javascript/ECMAScript</b>: <a href="https://observablehq.com/@observablehq/learn-javascript-introduction?collection=@observablehq/tutorial">Just enough to be dangerous with D3.js</a>, eslint, glitch.com, jsbin.com, <a href="https://eloquentjavascript.net/">Eloquent Javascript</a>, <a href="https://www.linkedin.com/learning/learning-functional-programming-with-javascript-es6-plus/a-functional-approach-to-transform-code">Learning functional programming ES6</a>, 
+    <li>Web Application Architecture: REST web service API (can use Python Flask, Ruby Sinatra, or Node.js for example), with a frontend framwork based on Model-View-Controller (MVC) design pattern and AJAX, such as React.js or Angular. <a href="https://www.udemy.com/course/es6-in-depth/?LSNPUBID=0F1O0otUXQc&ranEAID=0F1O0otUXQc&ranMID=39197&ranSiteID=0F1O0otUXQc-zD1ezaxEqNYcW_Ehtx80EQ&utm_medium=udemyads&utm_source=aff-campaign">ES6/Node/React/Webpack (5hrs tutorial)</a></li>
+    <li><b>Python</b>3: IronPython shell, Scipy, Numpy</li>
     <li><a href="https://www.coursera.org/learn/learn-to-program">Learn to Program (U of Toronto, Coursera, ~25 hrs)</a> Based on the <a href="https://developers.google.com/edu/python/introduction?hl=en">Google Python course</a></li>)
+
+    <li>Databases:  Document Oriented Databases (NoSQL) such as MongoDB (binary JSON documents), Redis (Key-Value store).  Relational databases (RDBMS): MariaDB, MySQL, PostgreSQL</li>
     <li><a href="https://www.coursera.org/collections/machine-learning">Andrew Ng's Machine Learning Collection</a></li> 
+    <li><b>Networking:</b> <a href="https://en.wikipedia.org/wiki/OSI_model">OSI Model</a>, <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">Internet Protocol Suite</a></li>
     {{expand section}}
 </ul>
 
