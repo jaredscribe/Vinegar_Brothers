@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>{% block title %}{% endblock %} - Jared's Flask/Jinja App</title>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vinegar Bros Analytics</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+<!--
+If you don't want to use the CDN, make a git submodule, or else add this to the git project
+<link rel="stylesheet" href="static/bootstrap-5.2.1-dist/css/bootstrap.css"> 
+-->
+
+  <!-- add after bootstrap.min.css -->
+
+  <script src="static/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+
+  <link rel="stylesheet" href="static/style.css" />
+  <link type="text/plain" rel="author" href="humans.txt">
+ 
+
+
+    {% endblock %}
+
+
+
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2025 by <a href="http://github.com/jaredscribe/Vinegar_Brothers">Essig Bros Analytics</a> and <a href="http://jaredscribe.com">Jaredscribe.com</a>.
+        {% endblock %}
+    </div>
+
+    <footer class="row">
+
+        <hr />
+        
+        {% block footer %}
+        {% endblock %}
+
+        &copy; Copyright 2025 by <a href="http://github.com/jaredscribe/Vinegar_Brothers">Essig Bros Analytics</a> and <a href="http://jaredscribe.com">Jaredscribe.com</a>.
+
+        <p class="float-right"><a href="#">Back to top</a></p>
+    
+        <nav class="navbar col-sm">
+      
+        <!--
+        <p><////?php echo "last modified: " .date ("F d Y H:i:s.", filemtime("index.php")); ?> </li></p>
+        -->
+    
+      </nav>
+      </footer>
+
+</body>
+</html>
