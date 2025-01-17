@@ -1,26 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
+{% extends "skel.html" %}
+{% block title %}Essig Bros Analytics{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
 
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Vinegar Bros Analytics</title>
+{% block content %}
 
-  <meta name="description" content="">
-  <meta name="author" content="">
-<!--
-If you don't want to use the CDN, make a git submodule, or else add this to the git project
-<link rel="stylesheet" href="static/bootstrap-5.2.1-dist/css/bootstrap.css"> 
--->
 
-  <!-- add after bootstrap.min.css -->
-
-  <script src="static/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
-
-  <link type="text/plain" rel="author" href="humans.txt">
- 
-</head>
-<body>
 <h2>Data Science Tools for Python</h2>
 <ul>
     <li>Ipython - REPL</li>
@@ -34,7 +20,7 @@ If you don't want to use the CDN, make a git submodule, or else add this to the 
     <li><a href="https://meta.wikimedia.org/wiki/Datasets">Wikipedia and meta.wikimedia Datasets</a>. more <a href="https://www.tensorflow.org/datasets/catalog/wikipedia">wikipedia datasets on tensorflow</a></li>
     <li><a href="https://www.sefaria.org/visualizations">Sefaria Visualizations</a></li>
     <li><a href="https://www.tableau.com/learn/articles/free-public-data-sets">Free public Datasets on Tableau</a></li>
-    {{expand section}}
+    expand section
 </ul>
 
 <h2>Scientific questions to answer</h2>
@@ -43,7 +29,7 @@ If you don't want to use the CDN, make a git submodule, or else add this to the 
     <li>What is the purpose of animal life?  of plant life?</li>
     <li>Is there a purpose to human life as distinct from the lives of brute animals?  Or is life merely "what we make of it"?</li>
     <li>Did life originate an evolutionary process of "random mutation"?  Or is there a design toward which life is evolving?  Is there an intelligence to the design?</li>
-{{expand section}}
+expand section
 </ul>
 
 <h2>Philosophy of Probabilistic reasoning, Causality, & Data science</h2>
@@ -91,7 +77,7 @@ If you don't want to use the CDN, make a git submodule, or else add this to the 
     <li><b>Databases</b>:  Document Oriented Databases (NoSQL) such as MongoDB (binary JSON documents), Redis (Key-Value store).  Relational databases (RDBMS): MariaDB, MySQL, PostgreSQL</li>
     <li><a href="https://www.coursera.org/collections/machine-learning">Andrew Ng's Machine Learning Collection</a></li> 
     <li><b>Networking:</b> <a href="https://en.wikipedia.org/wiki/OSI_model">OSI Model</a>, <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">Internet Protocol Suite</a></li>
-    {{expand section}}
+    expand section
 </ul>
 
 
@@ -124,19 +110,9 @@ If you don't want to use the CDN, make a git submodule, or else add this to the 
 </ul>
 
 </div> <!-- end .container -->
-<footer class="row">
 
-    <hr />
-    <p class="float-right"><a href="#">Back to top</a></p>
+{% endblock %}
 
-    <nav class="navbar col-sm">
-  
-    <!--
-	<p><////?php echo "last modified: " .date ("F d Y H:i:s.", filemtime("index.php")); ?> </li></p>
-    -->
+        {% block footer %}
+        {% endblock %}
 
-  </nav>
-  </footer>
-
-</body>
-</html>
