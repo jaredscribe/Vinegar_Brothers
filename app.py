@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from markupsafe import escape
-
+import datetime
 
 app = Flask(__name__)
 
@@ -8,9 +8,13 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route("/world")
+@app.route("/noaa")
+def noaa():
+    return "Here is some data from the NOAA" 
+
+@app.route("/datetime")
 def hello_world():
-    return "<p>Hello, World!  <a href=/goodbye>Say goodbye</a></p>"
+    return "<p>Hello, World!  It is now: " + datetime.datetime.now().strftime("%A, %d %B, %Y at %X") + "<a href=/goodbye>Say goodbye</a></p>"
 
 @app.route("/goodbye")
 @app.route("/goodbye/<name>")
