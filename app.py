@@ -10,7 +10,16 @@ def home():
 
 @app.route("/noaa")
 def noaa():
-    return "Here is some data from the NOAA" 
+    output = "Here we will munge some data from the NOAA and other agencies, and chart it with visualizations from D3js.org and IPython Notebooks utilizing NumPy and SciPy.  Tablau hosts some <a href='https://www.tableau.com/learn/articles/free-public-data-sets'>Free public datasets on climate and environment</a>" 
+    return output
+
+@app.route("/doge")
+def doge():
+    output = "Here we will munge some data from the U.S. Budget, Bureaucratic organization, Yearly Deficit, Debt, and Current Account Balances in Bilateral Trade relationships."
+    output = output + "We will chart these with visualizations from D3js.org and IPython Notebooks utilizing NumPy and SciPy."
+    output = output + "We will apply the analysis and contribute to the free and open-source education project <a href='http://en.wikiversity.org/wiki/User:Jaredscribe/Department_of_Government_Efficiency'>en.wikiversity.org/wiki/User:Jaredscribe/Department_of_Government_Efficiency</a>"  
+    output = output + "<a href='http://Data.gov'>Data.gov is 'The Home of the U.S. Government's Open Data'</a> boasting 307,851 datasets available"
+    return output
 
 @app.route("/datetime")
 def hello_world():

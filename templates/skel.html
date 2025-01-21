@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     {% block head %}
-    <title>{% block title %}{% endblock %} - Jared's Flask/Jinja App</title>
     
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Vinegar Bros Analytics</title>
+  <title>V{% block title %}{% endblock %} -Essig Bros Analytics</title>
 
   <meta name="description" content="">
   <meta name="author" content="">
@@ -22,7 +21,11 @@ If you don't want to use the CDN, make a git submodule, or else add this to the 
   <link rel="stylesheet" href="static/style.css" />
   <link type="text/plain" rel="author" href="humans.txt">
  
+  <script type="module">
+  
+  import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
+  </script>
 
     {% endblock %}
 
@@ -31,11 +34,11 @@ If you don't want to use the CDN, make a git submodule, or else add this to the 
 </head>
 <body>
     {% include 'navigation.html' %}
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
-        {% block footer %}
-        &copy; Copyright 2025 by <a href="http://github.com/jaredscribe/Vinegar_Brothers">Essig Bros Analytics</a> and <a href="http://jaredscribe.com">Jaredscribe.com</a>.
-        {% endblock %}
+    <div id="content">
+
+      <div id="container"></div>
+      {% block content %}{% endblock %}
+    
     </div>
 
     <footer class="row">
