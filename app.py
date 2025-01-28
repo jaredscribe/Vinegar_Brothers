@@ -1,12 +1,34 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file, send_from_directory
 from markupsafe import escape
 import datetime
+import os
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
     return render_template('index.html')
+
+@app.route('/shared/<path:filename>')
+def serve_file(filename):
+    return send_file(f'shared/{filename}')
+
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['the_file']
+        f.save('/shared/uploaded_file.txt')
+
+@app.route('/shared')
+def directory_listing():
+    # Get a list of files in the directory and its subdirectories
+    files = []
+    for root, dirs, filenames in os.walk('shared'):
+        for filename in filenames:
+            files.append(os.path.relpath(os.path.join(root, filename), 'shared'))
+        print(filenames)
+    # Render the template with the file list
+    return render_template('directory.html', filenames=filenames)
 
 @app.route("/noaa")
 def noaa():
@@ -57,4 +79,4 @@ def fib(n=None):    # write Fibonacci series up to n
         seq.append((i,a))
         a, b = b, a+b
         i=i+1
-    return render_template('hello.html', my_dict=seq)
+    return render_template('hello.html', my_dict=seq, n=n)

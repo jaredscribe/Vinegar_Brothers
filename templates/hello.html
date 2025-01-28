@@ -1,0 +1,22 @@
+{% extends "skel.html" %}
+{% block title %}Hello Goodbye Page{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<title> {% if saying %}{{ saying }} {% endif %}
+  from Flask</title>
+
+<h1>
+{% if saying %}{{ saying }} {% endif %}
+{% if person %}{{ person }}!
+{% else %} World! {% endif %}
+</h1>
+
+
+{% if my_dict %} This is the fibonnaci sequence: {% include 'dict.html' %} {% endif %}
+
+{% endblock %}
+

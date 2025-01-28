@@ -1,0 +1,13 @@
+<dl>
+    {% for key, value in my_dict %}
+        <dt>{{ key }}</dt>
+        <dd>{{ value }}</dd>
+    {% endfor %}
+</dl>
+
+<!-- 
+
+<ul>
+{% for row in rows %}
+<li class="{{ loop.cycle('odd', 'even') }}">{{ row }}</li>
+{% endfor %} -->
